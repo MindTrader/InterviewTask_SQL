@@ -58,7 +58,7 @@ VALUES
 	(10, 5),
 	(10, 7);
 
-SELECT P.Name, C.Name
+SELECT P.Name AS Product, C.Name AS Category
 FROM Products P 
 LEFT JOIN ProductsAndCategories PC ON P.Id = PC.ProductId 
 LEFT JOIN Categories C ON PC.CategoryId = C.Id
